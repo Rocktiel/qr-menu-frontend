@@ -1,0 +1,27 @@
+{
+  "common": {
+    "menu": "Menu",
+    "categories": "Categories",
+    "search": "Search",
+    "callWaiter": "Call Waiter",
+    "createOrder": "Create Order",
+    "feedback": "Feedback",
+    "favorites": "Favorites",
+    "language": "Language"
+  },
+  "product": {
+    "calories": "Calories",
+    "allergens": "Allergens",
+    "ingredients": "Ingredients",
+    "preparationTime": "Preparation Time",
+    "portion": "Portion",
+    "price": "Price"
+  },
+  "order": {
+    "orderNumber": "Order Number",
+    "status": "Status",
+    "totalAmount": "Total Amount",
+    "specialNotes": "Special Notes",
+    "addNote": "Add Note"
+  }
+}

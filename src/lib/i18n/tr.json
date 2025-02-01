@@ -1,0 +1,27 @@
+{
+  "common": {
+    "menu": "Menü",
+    "categories": "Kategoriler",
+    "search": "Ara",
+    "callWaiter": "Garson Çağır",
+    "createOrder": "Sipariş Oluştur",
+    "feedback": "Geri Bildirim",
+    "favorites": "Favoriler",
+    "language": "Dil"
+  },
+  "product": {
+    "calories": "Kalori",
+    "allergens": "Alerjenler",
+    "ingredients": "İçindekiler",
+    "preparationTime": "Hazırlama Süresi",
+    "portion": "Porsiyon",
+    "price": "Fiyat"
+  },
+  "order": {
+    "orderNumber": "Sipariş Numarası",
+    "status": "Durum",
+    "totalAmount": "Toplam Tutar",
+    "specialNotes": "Özel Notlar",
+    "addNote": "Not Ekle"
+  }
+}
