@@ -3,6 +3,18 @@ const withPWA = require("next-pwa")({
   register: true,
   skipWaiting: true,
   disable: process.env.NODE_ENV === "development",
+  runtimeCaching: [
+    {
+      urlPattern: /^https?.*/,
+      handler: "CacheFirst",
+      options: {
+        cacheName: "pages",
+        expiration: {
+          maxAgeSeconds: 60 * 60 * 24 * 30, // 30 gün
+        },
+      },
+    },
+  ],
 });
 
 /** @type {import('next').NextConfig} */
@@ -13,12 +25,13 @@ const nextConfig = {
   //   defaultLocale: "tr",
   // },
   env: {
-    NEXT_PUBLIC_API_URL:
-      process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001",
-    NEXT_PUBLIC_CLIENT_URL:
-      process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost:3000",
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001",
+    NEXT_PUBLIC_CLIENT_URL: process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost:3000",
   },
-  output: "export",
+  output: "export",  // Statik dışa aktarma için
+  experimental: {
+    outputStandalone: true,
+  },
 };
 
 module.exports = withPWA(nextConfig);
