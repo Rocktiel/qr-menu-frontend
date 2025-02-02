@@ -35,6 +35,9 @@ const nextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
+  experimental: {
+    staticPageGenerationTimeout: 300,
+  },
 };
 
 module.exports = withPWA(nextConfig);
