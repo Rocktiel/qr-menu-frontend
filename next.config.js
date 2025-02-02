@@ -18,6 +18,7 @@ const nextConfig = {
     NEXT_PUBLIC_CLIENT_URL:
       process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost:3000",
   },
+  output: "export",
 };
 
 module.exports = withPWA(nextConfig);
