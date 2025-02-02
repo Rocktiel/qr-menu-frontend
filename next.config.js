@@ -25,13 +25,16 @@ const nextConfig = {
   //   defaultLocale: "tr",
   // },
   env: {
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001",
-    NEXT_PUBLIC_CLIENT_URL: process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost:3000",
+    NEXT_PUBLIC_API_URL:
+      process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001",
+    NEXT_PUBLIC_CLIENT_URL:
+      process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost:3000",
   },
-  output: "export",  // Statik dışa aktarma için
-  experimental: {
-    outputStandalone: true,
+  output: "export",
+  images: {
+    unoptimized: true,
   },
+  trailingSlash: true,
 };
 
 module.exports = withPWA(nextConfig);
