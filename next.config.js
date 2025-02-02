@@ -8,10 +8,10 @@ const withPWA = require("next-pwa")({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  i18n: {
-    locales: ["tr", "en"],
-    defaultLocale: "tr",
-  },
+  // i18n: {
+  //   locales: ["tr", "en"],
+  //   defaultLocale: "tr",
+  // },
   env: {
     NEXT_PUBLIC_API_URL:
       process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001",
