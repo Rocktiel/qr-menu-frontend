@@ -24,7 +24,7 @@ const nextConfig = {
   //   locales: ["tr", "en"],
   //   defaultLocale: "tr",
   // },
-  
+  env: {
   NEXT_PUBLIC_API_URL:
       process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001",
     NEXT_PUBLIC_CLIENT_URL:
