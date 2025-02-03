@@ -24,11 +24,11 @@ const nextConfig = {
   //   locales: ["tr", "en"],
   //   defaultLocale: "tr",
   // },
-  env: {
-    NEXT_PUBLIC_API_URL:
-      "https://qr-menu-api-1.onrender.com",
+  
+  NEXT_PUBLIC_API_URL:
+      process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001",
     NEXT_PUBLIC_CLIENT_URL:
-      "https://qr-menu-api-2.onrender.com",
+      process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost:3000",
   },
   output: "export",
   images: {
