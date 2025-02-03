@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import toast from 'react-hot-toast'
+import { API_URL } from "@/config";
 
 export default function LoginForm() {
   const router = useRouter()
@@ -18,7 +19,7 @@ export default function LoginForm() {
 
     try {
       console.log('Attempting login with:', formData)
-      const response = await fetch('http://localhost:3001/api/auth/login', {
+      const response = await fetch(`${API_URL}/api/auth/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
