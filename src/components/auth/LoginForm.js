@@ -19,7 +19,7 @@ export default function LoginForm() {
 
     try {
       console.log('Attempting login with:', formData)
-      const response = await fetch(`${API_URL}/api/auth/login`, {
+      const response = await fetch(`${process.env.API_URL}/api/auth/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ export default function LoginForm() {
         <form className="space-y-6" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="username" className="block text-sm font-medium leading-6 text-gray-900">
-              Kullanıcı Adı
+              Kullanıcı A
             </label>
             <div className="mt-2">
               <input
